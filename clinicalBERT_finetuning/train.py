@@ -29,13 +29,16 @@ def main():
     # Define training arguments
     training_args = TrainingArguments(
         output_dir="./results",
-        evaluation_strategy="epoch",
-        learning_rate=1e-5,
-        per_device_train_batch_size=2,
+        evaluation_strategy="no",
+        learning_rate=2e-5,
+        per_device_train_batch_size=2,  # Lower batch size
         per_device_eval_batch_size=2,
-        num_train_epochs=2,  # Adjust based on your needs
+        num_train_epochs=3,
         weight_decay=0.01,
+        gradient_accumulation_steps=8,  # Accumulate gradients
+        fp16=True,
     )
+
 
     # Initialize Trainer
     trainer = Trainer(
