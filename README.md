@@ -1,4 +1,4 @@
-# clinicalBERT
+# clinical
 Repository for [Publicly Available Clinical BERT Embeddings](https://www.aclweb.org/anthology/W19-1909/) (NAACL Clinical NLP Workshop 2019)
 
 ## Using Clinical BERT
