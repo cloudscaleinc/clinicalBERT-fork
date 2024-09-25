@@ -33,7 +33,6 @@ def tokenize_and_align_labels(examples, tokenizer):
     tokenized_inputs["labels"] = labels  # Add aligned labels to the tokenized inputs
     return tokenized_inputs
 
-
 def load_and_preprocess_data():
     # Load the BC2GM corpus dataset
     dataset = load_dataset("spyysalo/bc2gm_corpus")
