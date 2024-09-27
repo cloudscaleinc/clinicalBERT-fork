@@ -11,9 +11,8 @@ from heuristic_tokenize import sent_tokenize_rules
 
 
 # update these constants to run this script
-OUTPUT_DIR = '/PATH/TO/OUTPUT/DIR' #this path will contain tokenized notes. This dir will be the input dir for create_pretrain_data.sh
-MIMIC_NOTES_FILE = 'PATH/TO/MIMIC/DATA' #this is the path to mimic data if you're reading from a csv. Else uncomment the code to read from database below
-
+OUTPUT_DIR = './pretrain_data/output'  # Directory to store tokenized notes; input for create_pretrain_data.sh
+MIMIC_NOTES_FILE = './physionet.org/files/mimiciii-demo/1.4/NOTEEVENTS.csv'  # Path to MIMIC-III data file (csv format)
 
 #setting sentence boundaries
 def sbd_component(doc):
